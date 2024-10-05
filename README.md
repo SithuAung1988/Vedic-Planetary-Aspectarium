@@ -146,6 +146,20 @@ Ket 11°59′22″ Vir  Ari Hasta
 Asc 11°59′34″ Cap  Ari Sravana   
 ```
 
+After downloading the GitHub repository and creating your `*.txt` files, run the `dataInput.py` script using one of the following commands:
+```sh
+python path/to/your/directory/VPA/dataInput.py
+```
+or
+```sh
+python3 path/to/your/directory/VPA/dataInput.py
+```
+After the data input window appeared, then load your `*.txt` files accordingly.
+![User inputs of Maitreya charts data.](https://i.imgur.com/b6cN0lN.png "User inputs of Maitreya charts data.")
+
+
+
+
 
 
 
