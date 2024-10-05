@@ -111,7 +111,7 @@ After finished installing all the prerequisites:
 
 - Clone the repo
 ```sh
-git clone <repo> <directory>
+git clone https://github.com/SithuAung1988/Vedic-Planetary-Aspectarium.git <directory>
 cd <directory>
 ```
 If you need help, read this article: [`git clone`](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=webui)
