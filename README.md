@@ -76,8 +76,7 @@ Once you have installed `Python 3`, you can install `PyQt6` and `darkdetect` usi
 ```sh
 pip install PyQt6 darkdetect
 ```
-
-![pip install pyqt6 and darkdetect.](https://i.imgur.com/qNC8Ne8.png "pip install pyqt6 and darkdetect.")
+![pip install pyqt6 and darkdetect.](https://i.imgur.com/qNC8Ne8.png pip install pyqt6 and darkdetect.)
 
 ### Git
 #### Windows
@@ -158,7 +157,7 @@ python3 path/to/your/directory/VPA/dataInput.py
 ```
 After the data input window appeared, then load your `*.txt` files accordingly.
 
-![User inputs of Maitreya charts data.](https://i.imgur.com/Jaj0gUP.png "User inputs of Maitreya charts data.")
+<img src="https://i.imgur.com/Jaj0gUP.png" alt="User inputs of Maitreya charts data." style="width:600px;"/>
 
 
 
