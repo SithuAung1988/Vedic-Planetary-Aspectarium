@@ -76,7 +76,7 @@ Once you have installed `Python 3`, you can install `PyQt6` and `darkdetect` usi
 ```sh
 pip install PyQt6 darkdetect
 ```
-![pip install pyqt6 and darkdetect.](https://i.imgur.com/qNC8Ne8.png pip install pyqt6 and darkdetect.)
+![pip install pyqt6 and darkdetect.](https://i.imgur.com/qNC8Ne8.png "pip install pyqt6 and darkdetect.")
 
 ### Git
 #### Windows
