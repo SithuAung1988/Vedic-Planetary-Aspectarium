@@ -76,7 +76,6 @@ Once you have installed `Python 3`, you can install `PyQt6` and `darkdetect` usi
 ```sh
 pip install PyQt6 darkdetect
 ```
-<img src="https://i.imgur.com/mw4qbiE.png" atl="pip install PyQt6 darkdetect" style="width:800px;"/>
 
 ### Git
 #### Windows
@@ -129,7 +128,7 @@ If you need help, read this article: [`git clone`](https://docs.github.com/en/re
 > [!TIP]
 > You can name them anything you like. However, for the sake of simplicity, it is strongly recommended to use appropriate names such as `natal.txt` and `transit.txt`, or `kundali.txt` and `gochar.txt`.
 
-![Data output from 'Maitreya'.](https://i.imgur.com/emc97MY.png "Data output from 'Maitreya")
+<img src="https://i.imgur.com/emc97MY.png" alt="Data output from 'Maitreya" style="width:600px;"/>
 
 Your example files should look like this:
 ```
@@ -148,11 +147,11 @@ Asc 11°59′34″ Cap  Ari Sravana
 ```
 
 After downloading the GitHub repository and creating your `*.txt` files, run the `dataInput.py` script using one of the following commands:
-```sh
+```python
 python path/to/your/directory/VPA/dataInput.py
 ```
 or
-```sh
+```python
 python3 path/to/your/directory/VPA/dataInput.py
 ```
 After the data input window appears, load your `*.txt` files accordingly.
@@ -169,12 +168,35 @@ If there is an issue with the data inputs, you will see a message box like this:
 
 If you see the error message, check your input files and try again.
 
-After clicking 'Continue', you will be greeted by the following window.
+After clicking 'Continue', you will see the following window:
 <img src="https://i.imgur.com/d519CtU.png" alt="Data table window" style="width:600px;"/>
 
-On this table, rows are aspecting planets and column are aspected planets. You can switch the window tabs to choose between 'Natal to Transit Aspects' and 'Transit to Natal Aspects'.
+In this table, the rows represent the aspecting planets, and the columns represent the aspected planets. You can switch between the 'Natal to Transit Aspects' and 'Transit to Natal Aspects' tabs.
 
-Even after you close `Aspect Table Window`, you can call this window back without needing a restart. When you run the following command, the program will give you the data table 
+The program can remember the last input data. Even after closing the `Aspect Table Window`, you can reopen it without restarting the program. Run the following command to display the data table again:
+```python
+python path/to/your/directory/VPA/dataTable.py
+```
+If you want to see your natal and transit charts in sorth or south styles, run one of these following command:
+```python
+python path/to/your/directory/VPA/chartTableN.py
+```
+
+<img src="https://i.imgur.com/9QquqPd.png" alt="North Indian Chart" style="width:600px;"/>
+
+or
+```python
+python path/to/your/directory/VPA/chartTableS.py
+```
+
+<img src="https://i.imgur.com/jEqhzXV.png" alt="South Indian Chart" style="width:600px;"/>
+
+Once you finish, you can run the following script to cleanup all temporary data.
+```python
+python path/to/your/directory/VPA/dataDelete.py
+```
+> [!CAUTION]
+> That script will delete all the saved data. If you want to backup your calculations, then DO NOT RUN that script.
 
 
 
