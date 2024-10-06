@@ -76,7 +76,7 @@ Once you have installed `Python 3`, you can install `PyQt6` and `darkdetect` usi
 ```sh
 pip install PyQt6 darkdetect
 ```
-<img src="https://i.imgur.com/mw4qbiE.png" style="width:520px;"/>
+<img src="https://i.imgur.com/mw4qbiE.png" atl="pip install PyQt6 darkdetect" style="width:800px;"/>
 
 ### Git
 #### Windows
@@ -156,13 +156,18 @@ or
 python3 path/to/your/directory/VPA/dataInput.py
 ```
 After the data input window appeared, then load your `*.txt` files accordingly.
-<img src="https://i.imgur.com/Jaj0gUP.png" alt="User inputs of Maitreya charts data." style="width:600px;"/>
+
+<img src="https://i.imgur.com/XR5ACMj.png" alt="User inputs of Maitreya charts data." style="width:520px;"/>
 
 If everything went well, you will see the message box like this:
-<img src="https://i.imgur.com/DZpH8IM.png" alt="Data calculated and passed." style="width:600px;"/>
 
-If something went worng with data inputs, then you will see the message box like this one:
-<img src="https://i.imgur.com/ZywBjzJ.png" alt="Data calculated and passed." style="width:600px;"/>
+<img src="https://i.imgur.com/2YCaZhT.png" alt="Data calculated and passed." style="width:600px;"/>
+
+If something went worng with data inputs, then you will see the message box like this:
+
+<img src="https://i.imgur.com/CqDXWAF.png" alt="Data calculated and passed." style="width:600px;"/>
+
+
 
 
 
