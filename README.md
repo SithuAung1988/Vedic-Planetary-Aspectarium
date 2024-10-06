@@ -155,21 +155,26 @@ or
 ```sh
 python3 path/to/your/directory/VPA/dataInput.py
 ```
-After the data input window appeared, then load your `*.txt` files accordingly.
+After the data input window appears, load your `*.txt` files accordingly.
 
 <img src="https://i.imgur.com/XR5ACMj.png" alt="User inputs of Maitreya charts data." style="width:520px;"/>
 
-If everything went well, you will see the message box like this:
+If everything is correct, you will see a message box like this:
 
 <img src="https://i.imgur.com/2YCaZhT.png" alt="Data calculated and passed." style="width:600px;"/>
 
-If something went worng with data inputs, then you will see the message box like this:
+If there is an issue with the data inputs, you will see a message box like this:
 
 <img src="https://i.imgur.com/CqDXWAF.png" alt="Data calculated and passed." style="width:600px;"/>
 
+If you see the error message, check your input files and try again.
 
+After clicking 'Continue', you will be greeted by the following window.
+<img src="https://i.imgur.com/d519CtU.png" alt="Data table window" style="width:600px;"/>
 
+On this table, rows are aspecting planets and column are aspected planets. You can switch the window tabs to choose between 'Natal to Transit Aspects' and 'Transit to Natal Aspects'.
 
+Even after you close `Aspect Table Window`, you can call this window back without needing a restart. When you run the following command, the program will give you the data table 
 
 
 
