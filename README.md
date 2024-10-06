@@ -71,7 +71,7 @@ Using `winget` makes it easier to update and manage your Windows software.
 > [!TIP]
 > Most major GNU/Linux distros come with `Python` pre-installed. However, in many cases, you may need to use `python3` instead of `python` when running Python scripts.
 
-#### PyQt6 and darkdetect
+### PyQt6 and darkdetect
 Once you have installed `Python 3`, you can install `PyQt6` and `darkdetect` using `pip`. Enter the following command in your `Terminal` app (on macOS and Linux) or `PowerShell` (on Windows).
 ```sh
 pip install PyQt6 darkdetect
@@ -213,8 +213,8 @@ This is how version number scheme works:
 flowchart TD
 subgraph Z[" "]
 direction LR
-  A 
-  B
+  A("Generational")
+  B("Patches")
 end
 subgraph ZA[" "]
 direction LR
@@ -225,8 +225,8 @@ direction LR
 end
 subgraph ZB[" "]
 direction LR
-    H(["Feature Upgrade"])
-    I(["Internal Upgrade"])
+    H(["Feature"])
+    I(["Internal"])
 end
 D --> A
 F --> B
