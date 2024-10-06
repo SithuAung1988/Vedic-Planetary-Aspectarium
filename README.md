@@ -198,7 +198,64 @@ python path/to/your/directory/VPA/dataDelete.py
 > [!CAUTION]
 > That script will delete all the saved data. If you want to backup your calculations, then DO NOT RUN that script.
 
+## Version Number Scheme
 
+This is how version number scheme works:
+
+```mermaid
+%%{init: {
+  "flowchart": {
+    "diagramPadding": 1,
+    "padding": 0
+  },
+  "fontFamily": "monospace"
+  } }%%
+flowchart TD
+subgraph Z[" "]
+direction LR
+  A 
+  B
+end
+subgraph ZA[" "]
+direction LR
+    D("00#46;")
+    E("00#46;")
+    F("00#46;")
+    G("00")
+end
+subgraph ZB[" "]
+direction LR
+    H(["Feature Upgrade"])
+    I(["Internal Upgrade"])
+end
+D --> A
+F --> B
+H --> E
+I --> G
+
+classDef default fill:transparent,stroke:transparent,stroke-width:1px,padding:0px;
+style A color: 4285F4;
+style D color: 4285F4;
+style F color: 34A853;
+style B color: 34A853;
+style H color: FBBC05;
+style E color: FBBC05;
+style I color: EA4335;
+style G color: EA4335;
+style Z fill:transparent,stroke:transparent,stroke-width:1px,padding:0px;
+style ZA fill:transparent,stroke:transparent,stroke-width:1px,padding:0px;
+style ZB fill:transparent,stroke:transparent,stroke-width:1px,padding:0px;
+```
+
+The first part in the version number represents generation of the application and will increases whenever Python or PyQt upgrade their versions. Since Python 3.x is not backward compatible with Python 2.x, and PyQt6 is not backward compatible with PyQt5, I want to avoid any confusion about which version users should run based on their preferred versions of Python and PyQt.
+
+For this reason, I have implemented this versioning system. When I update my code to be compatible with Python 4.x or PyQt7, whichever comes first, I will also increment the first part of the version number.
+
+The second part of the version number indicates the application's features and will increase whenever new features are added. For example, I plan to include `Jagannatha Hora` as a data source and add the ability to input planetary data manually in future releases. After implementing these upgrades, I will increment the second part of the version number.
+
+The third part of the version number signifies bug fixes and patches. For instance, I am aware that the script for displaying the North Indian style chart is not very efficient. I wrote it this way to facilitate easier debugging, allowing me to work on the natal chart without affecting the transit chart code or vice vesa. Once I modify and improve this code, I will increase the third part of the version number.
+
+The fourth part of the version number reflects internal improvements of the software. For example, I have already written the code for the East Indian style chart, but it has some rough edges that need polishing. Therefore, I decided not to include it in this release. Once I complete this functionality, I will add it to the new release and update the version number accordingly.
 
 
 
