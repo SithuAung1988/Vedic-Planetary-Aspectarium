@@ -320,7 +320,7 @@ _**BPHS Vol. I translated by Girish Chand Sharma**_
 
 I even went through `Dr. Suresh Chandra Mishra's` Hindi translation, even though I don't understand Hindi. I used Google Translate to help me with that. You can find the book on [archive.org](https://archive.org/details/brihat-parashar-hora-shastra-vol-2-suresh-chandra-mishra). Although it is labeled as Volume 2, it is actually Volume 1. Despite my extensive efforts, I was unable to locate the chapter discussing `Sputa Drishti.` It appears that `Dr. Suresh Chandra Mishra` did not translate that entire chapter.
 
-I also came across some information about `Sputa Drishti` on [Maitreya's webpage](https://saravali.github.io/astrology/drishti_sputa.html), which presents a very different calculation for Jupiter's special aspects compared to the aforementioned English translations. While the calculations for the 3rd and 7th rasis are consistent, the calculations for the 4th and 8th rasis differ significantly.
+I also came across some information about `Sputa Drishti` on [Maitreya's webpage](https://saravali.github.io/astrology/drishti_sputa.html), which presents a very different calculation for Jupiter's special aspects compared to the aforementioned English translations. While the calculations for the `3rd` and `7th` rasis are consistent, the calculations for the `4th` and `8th` rasis differ significantly.
 
 Both English translations indicate:
 - For the 4th rasi: $$60 - (\text{angular distance} - 120)$$
