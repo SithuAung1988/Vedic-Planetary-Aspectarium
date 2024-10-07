@@ -257,53 +257,53 @@ The third part of the version number signifies bug fixes and patches. For instan
 
 The fourth part of the version number reflects internal improvements of the software. For example, I have already written the code for the East Indian style chart, but it has some rough edges that need polishing. Therefore, I decided not to include it in this release. Once I complete this functionality, I will add it to the new release and update the version number accordingly.
 
-## Important Note:
+## Important Notes
 
 ### Aspect Method
 
 > [!WARNING]
-> This section is very important. You must read it carefully before using 'VPA'.
+> This section is very important. You must read it carefully before using `VPA`.
 
-Before using 'VPA', please be aware that the current version employs what I call the **Alternative Method** for calculating planetary aspects. The key difference between the 'Traditional Method' and the 'Alternative Method' lies in how retrograde planets (including Rahu and Ketu) create aspects with other planets. 
+Before using `VPA`, please be aware that the current version employs what I call the `**Alternative Method**` for calculating planetary aspects. The key difference between the `Traditional Method` and the `Alternative Method` lies in how retrograde planets (including `Rahu` and `Ketu`) create aspects with other planets. 
 
-In the Alternative Method, the assumption is that planets can only aspect planets that are ahead of them in their path (i.e., they cannot see backward). If a planet is moving in normal motion, it can only aspect those with a higher degree. Conversely, if a planet is in retrograde motion, it can only aspect those with a lower degree.
+In the `Alternative Method`, the assumption is that planets can only aspect planets that are ahead of them in their path (i.e., they cannot see backward). If a planet is moving in normal motion, it can only aspect those with a higher degree. Conversely, if a planet is in retrograde motion, it can only aspect those with a lower degree.
 
-I come from a long line of Vedic astrologers. According to our oral tradition, my ancestors migrated from India to Burma in the early 18th century and served as astrologers in the Burmese royal court, advising many kings and princes. This method of calculating planetary aspects has been passed down through generations within my family. It has been tested repeatedly and found to be more reliable than the traditional method, which is why I am committed to preserving this tradition.
+I come from a long line of Vedic astrologers. According to our oral tradition, my ancestors migrated from India to Burma in the early 18th century and served as astrologers in the Burmese royal court, advising many kings and princes. This method of calculating planetary aspects has been passed down through generations within my family. It has been tested repeatedly and found to be more reliable than the `traditional method`, which is why I am committed to preserving this tradition.
 
-For example, consider a scenario where Planet A is a fast-moving planet and Planet B is a slow-moving planet. If A is in Scorpio and B is in Taurus, their aspect is strong as they move towards each other. Once A completes a full 60 virupas aspect to B, it moves away and stops aspecting B. Later, when A is in Libra, its 7th aspect point is in Aries. If A starts moving normally again and re-enters Scorpio, it makes a 7th aspect to B once more. Initially, A aspected B from the front side, and upon returning, it aspects B from the back side. From B’s perspective, A first aspected it from the front and later from the back.
+For example, consider a scenario where `Planet A` is a fast-moving planet and `Planet B` is a slow-moving planet. If A is in `Scorpio` and B is in `Taurus`, their aspect is strong as they move towards each other. Once A completes a full 60 virupas aspect to B, it moves away and stops aspecting B. Later, when A is in `Libra`, its 7th aspect point is in `Aries`. If A starts moving normally again and re-enters `Scorpio`, it makes a 7th aspect to B once more. Initially, A aspected B from the front side, and upon returning, it aspects B from the back side. From B’s perspective, A first aspected it from the front and later from the back.
 
-In traditional methods, even if Planet A aspects Planet B twice in similar scenarios, it always aspects B from the back side, never making a face-to-face aspect. Prominent Vedic astrologers like Prof. K.S. Krishnamurti (1902-1978) emphasized that aspects made by retrograde planets are stronger than those made by planets in normal motion. This is why I believe this method of calculating aspects is more logical than traditional methods.
+In the `traditional method`, even if Planet A aspects Planet B twice in similar scenarios, it always aspects B from the back side, never making a face-to-face aspect. Prominent Vedic astrologers like `Prof. K.S. Krishnamurti` (1902-1978) emphasized that aspects made by retrograde planets are stronger than those made by planets in normal motion. This is why I believe this method of calculating aspects is more logical than traditional methods.
 
-Another example involves planets with special aspects. If Mars is in Scorpio and Planet A is in Leo, the traditional method suggests no aspect between them. However, using the alternative method, Mars aspects Planet A via its 4th special aspect. When Mars returns to normal motion, its 7th or 8th aspects fail to aspect Planet B. Whether an aspect exists or not can significantly impact predictions.
+Another example involves planets with special aspects. If `Mars` is in `Scorpio` and `Planet A` is in `Leo`, the `traditional method` suggests no aspect between them. However, using the `alternative method`, `Mars` aspects `Planet A` via its 4th special aspect. When `Mars` returns to normal motion, its 7th or 8th aspects fail to aspect `Planet B`. Whether an aspect exists or not can significantly impact predictions.
 
-I believe more research is needed in this area. Classical Vedic treatises like BPHS, Brihat Jataka, Saravali, Phaladeepika, and Jataka Parijata do not mention these alternative methods, to the best of my knowledge. I apologize for any shortcomings in my understanding. However, given the long history of Vedic astrology, I do not believe my ancestors invented this method. Therefore, I refer to it as the 'Alternative Method' to distinguish it from traditional practices.
+I believe more research is needed in this area. Classical Vedic treatises like BPHS, Brihat Jataka, Saravali, Phaladeepika, and Jataka Parijata do not mention the `alternative method`, to the best of my knowledge. _I apologize for any shortcomings in my understanding_. However, given the long history of Vedic astrology, I do not believe my ancestors invented this method. Therefore, I refer to it as the `Alternative Method` to distinguish it from the `traditional method`.
 
 > [!TIP]
-> In a future release, I will provide an option for users to select between the `Traditional Method` and the `Alternative Method`. For now, if you prefer to use the 'Traditional Method', you can modify the 'dataCompute.py' script by yourself. There is a function called `calculateDistance` and you can make your edit there.
+> In a future release, I will provide an option for users to select between the `Traditional Method` and the `Alternative Method`. For now, if you prefer to use the `Traditional Method`, you can modify the `dataCompute.py` script by yourself. There is a function called `calculateDistance` and you can make your edit there.
 
 ### Types of Drishtis
 
 > [!WARNING]
-> Again this section is also very important. You must read it carefully before using 'VPA'.
+> Again this section is also very important. You must read it carefully before using `VPA`.
 
 There are three types of Drishti:
-- Rasi Drishti
-- Graha Drishti
-- Sputa Drishti
+- `Rasi Drishti`
+- `Graha Drishti`
+- `Sputa Drishti`
 
-Let me share my understanding of these drishtis, but please remember that this is just my personal opinion, so take it with a grain of salt.
+Let me share my understanding of these drishtis, but please remember that this is just my **personal opinion**, so take it with a grain of salt.
 
-Imagine you’re a marketing executive at a local market, and your CEO sends out a memo regarding a new product launch. This memo may cover various issues, such as coordinating production with the production team, budgeting for the launch campaign with the finance team, and, of course, discussing the marketing campaign with you. The instructions may be quite broad, and the CEO likely has many other priorities to address. To me, this represents 'Rasi Drishti.'
+Imagine you’re a marketing executive at a local market, and your CEO sends out a memo regarding a new product launch. This memo may cover various issues, such as coordinating production with the production team, budgeting for the launch campaign with the finance team, and, of course, discussing about the marketing campaign with you and your team. The instructions may be quite broad, and the CEO likely has many other priorities to address. To me, this represents `Rasi Drishti.`
 
-Now, let's discuss 'Graha Drishti.' Picture receiving a memo from your regional director. This memo should be much more specific than the one from your CEO, focusing on details relevant to your market. In my view, this aligns with 'Graha Drishti.'
+Now, let's discuss 'Graha Drishti.' Picture receiving a memo from your regional director. This memo should be much more specific than the one from your CEO, focusing on details relevant to your local market. In my view, this aligns with `Graha Drishti.`
 
-Finally, what about 'Sputa Drishti'? Again, consider receiving instructions from your department head or marketing manager. Their marketing plan will include details on how to execute the 7Ps of marketing or how each stage of the marketing funnel should engage with consumers. As your direct supervisor, you should pay close attention to their instructions. This, for me, embodies 'Sputa Drishti.'
+Finally, what about 'Sputa Drishti'? Again, consider receiving instructions from your department head or marketing manager. Their marketing plan will include details on how to execute the 7Ps of marketing or how each stage of the marketing funnel should engage with consumers. As your direct supervisor, you should pay close attention to their instructions. This, for me, embodies `Sputa Drishti.`
 
 At the end of the day, every marketing professional has their own unique approach. Some may lean more towards digital marketing, while others focus on promotions or emphasize omnichannel strategies. The same can be said for planets; each has its own personality (karakas) and dignities, such as friendships with aspecting planets (Naisargika Mitra or Tatkalika Mitra) and signs (Moolatrikona or Uccha). They also have specific duties and responsibilities related to their houses. We must take these factors into account when assessing the effects of Drishtis.
 
-Many Hindu astrologers, as well as Vedic astrology books and software, often overlook 'Sputa Drishti.' I believe this is due to issues in the BPHS. In BPHS, the calculation for Jupiter's special Sputa Drishti is somewhat unusual.
+Many Hindu astrologers, as well as Vedic astrology books and software, often overlook `Sputa Drishti.` I believe this is due to issues in the BPHS. In BPHS, the calculation for Jupiter's special Sputa Drishti is somewhat _controversial_.
 
-There are two English translations of BPHS available online: one by Shri R. Santhanam and the other by Girish Chand Sharma. I have read both, and they translate the relevant sections in a similar manner.
+There are two English translations of BPHS available online: one by `Shri R. Santhanam` and the other by `Girish Chand Sharma`. I have read both, and they translate the relevant sections in a similar manner.
 
 > 12. SPECIAL CONSIDERATION FOR JUPITER'S ASPECTS.. Deduct the longitude of Jupiter from that of the planet aspected by him. If the resultant sum is 3 Rasis & c or 7 Rasis & c, halve the degrees etc. (ignoring Rasis) and increase it by 45. If the sum is 4 Rasis & c or 8 Rasis & c, the degrees etc. (ignoring Rasis) be subtracted from 60. This will be the aspectual value. The sum being in conformity with others than these be treated as stated earlier.<br>
 _**Chapter 26 : p.g. 256**_<br>
@@ -318,9 +318,9 @@ _**BPHS Vol. I translated by Shri R. Santhanam**_
 _**Chapter 28 : p.g. 375**_<br>
 _**BPHS Vol. I translated by Girish Chand Sharma**_
 
-I even went through Dr. Suresh Chandra Mishra's Hindi translation, even though I don't understand Hindi. I used Google Translate to help me with that. You can find the book on [archive.org](https://archive.org/details/brihat-parashar-hora-shastra-vol-2-suresh-chandra-mishra). Although it is labeled as Volume 2, it is actually Volume 1. Despite my extensive efforts, I was unable to locate the chapter discussing 'Sputa Drishti.' It appears that Dr. Suresh Chandra Mishra did not translate that entire chapter.
+I even went through `Dr. Suresh Chandra Mishra's` Hindi translation, even though I don't understand Hindi. I used Google Translate to help me with that. You can find the book on [archive.org](https://archive.org/details/brihat-parashar-hora-shastra-vol-2-suresh-chandra-mishra). Although it is labeled as Volume 2, it is actually Volume 1. Despite my extensive efforts, I was unable to locate the chapter discussing `Sputa Drishti.` It appears that `Dr. Suresh Chandra Mishra` did not translate that entire chapter.
 
-I also came across some information about 'Sputa Drishti' on Maitreya's webpage, which presents a very different calculation for Jupiter's special aspects compared to the aforementioned English translations. While the calculations for the 3rd and 7th rasis are consistent, the calculations for the 4th and 8th rasis differ significantly.
+I also came across some information about `Sputa Drishti` on [Maitreya's webpage](https://saravali.github.io/astrology/drishti_sputa.html), which presents a very different calculation for Jupiter's special aspects compared to the aforementioned English translations. While the calculations for the 3rd and 7th rasis are consistent, the calculations for the 4th and 8th rasis differ significantly.
 
 Both English translations indicate:
 - For the 4th rasi: $$60 - (\text{angular distance} - 120)$$
@@ -330,26 +330,24 @@ In contrast, Maitreya's calculations suggest:
 - For the 4th rasi: $$2 \cdot (150 - \text{angular distance})$$
 - For the 8th rasi: $$15 + \left(2 \cdot \frac{270 - \text{angular distance}}{3}\right)$$
 
-
 [Another document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) I found online proposed different calculations:
 - For the 4th rasi: $$60 - \left(2 \cdot (\text{angular distance} - 120)\right)$$
 - For the 8th rasi: $$15 + \left(1.5 \cdot \left(30 - \left(\text{angular distance} - 240\right)\right)\right)$$
 
-In my view, [the unknown document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) I discovered online provides the clearest explanation of 'Sputa Drishti,' and I prefer its interpretation over the others. However, this is just my subjective opinion.
+In my view, [the unknown document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) I discovered online provides the clearest explanation of `Sputa Drishti,` and I prefer its interpretation over the others. However, this is just my **subjective opinion**.
 
-In the current version of 'VPA,' I adopted the method of the unknown document which I referred to as the 'Alternative Method.'
+In the current version of `VPA,` I adopted the method of the unknown document which I referred to as the `Alternative Method.`
 
-I'm not sure who authored this unknown document, so please let me know if you have any information about the author or the document's title, so I can give proper credit.
+> [!NOTE]
+> I'm not sure who authored this unknown document, so please let me know if you have any information about the author or the document's title, so I can give proper credit.
 
 To summarize, all the documents I have reviewed agree on the calculations for all drishtis except for Jupiter's 4th and 8th special drishtis:
-- Both English translations are in agreement, but Maitreya/Saravali's calculations and the Unknown Document's calculations diverge for both the 4th and 8th rasis.
-- Maitreya/Saravali's calculations and the Unknown Document's calculations align on the 4th rasi but disagree on the 8th. They are in agreement regarding the other drishti calculations.
-- In this release of 'VPA,' I opted to use the calculations from the Unknown Document because I believe they provide a better explanation of drishtis than the others.
+- Both `English translations` are in agreement, but `Maitreya/Saravali's` calculations and the `Unknown Document's` calculations diverge for both the `4th` and `8th` rasis.
+- `Maitreya/Saravali's` calculations and the `Unknown Document's` calculations align on the `4th` rasi but disagree on the `8th`. They are in agreement regarding the other drishti calculations.
+- In this release of `VPA,` I opted to use the calculation from the Unknown Document because I believe it provide a better explanation of drishtis than the others.
 
 > [!TIP]
-> Although I prefer the 'Alternative Method' for calculating 'Sputa Drishti' as outlined in the unknown document, I plan to include an option for users to select different calculation methods in future releases.
-
-
+> Although I prefer the `Alternative Method` for calculating `Sputa Drishti` as outlined in the `unknown document`, I plan to include an option for users to select different calculation methods in future releases.
 
 ## Credit
 
