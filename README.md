@@ -198,7 +198,7 @@ Once you finish, you can run the following script to cleanup all temporary data.
 python path/to/your/directory/VPA/dataDelete.py
 ```
 > [!CAUTION]
-> That script will delete all the saved data. If you want to backup your calculations, then DO NOT RUN that script.
+> That script will delete all the previouly saved data. If you want to backup your calculations, then DO NOT RUN that script.
 
 ## Version Number Scheme
 
