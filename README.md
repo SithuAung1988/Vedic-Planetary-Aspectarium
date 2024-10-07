@@ -112,8 +112,10 @@ After finished installing all the prerequisites:
 - Clone the repo
 ```sh
 git clone https://github.com/SithuAung1988/Vedic-Planetary-Aspectarium.git <directory>
-cd <directory>
+cd <directory>/VPA/
 ```
+Replace the `<directory>` part with the directory path where you want to store to `VPA's` scripts. For example: my desktop directory path is `~/Desktop/`.
+
 If you need help, read this article: [`git clone`](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=webui)
   
 - Launch the `Maitreya` application with the following settings:
