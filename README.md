@@ -274,7 +274,7 @@ For example, consider a scenario where `Planet A` is a fast-moving planet and `P
 
 In the `traditional method`, even if Planet A aspects Planet B twice in similar scenarios, it always aspects B from the back side, never making a face-to-face aspect. Prominent Vedic astrologers like `Prof. K.S. Krishnamurti` (1902-1978) emphasized that aspects made by retrograde planets are stronger than those made by planets in normal motion. This is why I believe this method of calculating aspects is more logical than traditional methods.
 
-Another example involves planets with special aspects. If `Mars` is in `Scorpio` and `Planet A` is in `Leo`, the `traditional method` suggests no aspect between them. However, using the `alternative method`, `Mars` aspects `Planet A` via its 4th special aspect. When `Mars` returns to normal motion, its 7th or 8th aspects fail to aspect `Planet B`. Whether an aspect exists or not can significantly impact predictions.
+Another example involves planets with special aspects. If `Mars` is in `Scorpio` and `Planet A` is in `Leo`, the `traditional method` suggests no aspect between them. However, using the `alternative method`, `Mars` aspects `Planet A` via its `4th` special aspect. When `Mars` returns to normal motion, its `7th` or `8th` aspects fail to aspect `Planet B`. Whether an aspect exists or not can significantly impact predictions.
 
 I believe more research is needed in this area. Classical Vedic treatises like BPHS, Brihat Jataka, Saravali, Phaladeepika, and Jataka Parijata do not mention the `alternative method`, to the best of my knowledge. _I apologize for any shortcomings in my understanding_. However, given the long history of Vedic astrology, I do not believe my ancestors invented this method. Therefore, I refer to it as the `Alternative Method` to distinguish it from the `traditional method`.
 
@@ -323,16 +323,16 @@ I even went through `Dr. Suresh Chandra Mishra's` Hindi translation, even though
 I also came across some information about `Sputa Drishti` on [Maitreya's webpage](https://saravali.github.io/astrology/drishti_sputa.html), which presents a very different calculation for Jupiter's special aspects compared to the aforementioned English translations. While the calculations for the `3rd` and `7th` rasis are consistent, the calculations for the `4th` and `8th` rasis differ significantly.
 
 Both English translations indicate:
-- For the 4th rasi: $$60 - (\text{angular distance} - 120)$$
-- For the 8th rasi: $$60 - (\text{angular distance} - 240)$$
+- For the `4th` rasi: $$60 - (\text{angular distance} - 120)$$
+- For the `8th` rasi: $$60 - (\text{angular distance} - 240)$$
 
 In contrast, Maitreya's calculations suggest:
-- For the 4th rasi: $$2 \cdot (150 - \text{angular distance})$$
-- For the 8th rasi: $$15 + \left(2 \cdot \frac{270 - \text{angular distance}}{3}\right)$$
+- For the `4th` rasi: $$2 \cdot (150 - \text{angular distance})$$
+- For the `8th` rasi: $$15 + \left(2 \cdot \frac{270 - \text{angular distance}}{3}\right)$$
 
 [Another document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) I found online proposed different calculations:
-- For the 4th rasi: $$60 - \left(2 \cdot (\text{angular distance} - 120)\right)$$
-- For the 8th rasi: $$15 + \left(1.5 \cdot \left(30 - \left(\text{angular distance} - 240\right)\right)\right)$$
+- For the `4th` rasi: $$60 - \left(2 \cdot (\text{angular distance} - 120)\right)$$
+- For the `8th` rasi: $$15 + \left(1.5 \cdot \left(30 - \left(\text{angular distance} - 240\right)\right)\right)$$
 
 In my view, [the unknown document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) I discovered online provides the clearest explanation of `Sputa Drishti,` and I prefer its interpretation over the others. However, this is just my **subjective opinion**.
 
