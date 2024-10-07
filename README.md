@@ -341,6 +341,9 @@ In the current version of `VPA,` I adopted the method of the unknown document wh
 > [!NOTE]
 > I'm not sure who authored this unknown document, so please let me know if you have any information about the author or the document's title, so I can give proper credit.
 
+A
+
+
 To summarize, all the documents I have reviewed agree on the calculations for all drishtis except for Jupiter's 4th and 8th special drishtis:
 - Both `English translations` are in agreement, but `Maitreya/Saravali's` calculations and the `Unknown Document's` calculations diverge for both the `4th` and `8th` rasis.
 - `Maitreya/Saravali's` calculations and the `Unknown Document's` calculations align on the `4th` rasi but disagree on the `8th`. They are in agreement regarding the other drishti calculations.
@@ -348,6 +351,16 @@ To summarize, all the documents I have reviewed agree on the calculations for al
 
 > [!TIP]
 > Although I prefer the `Alternative Method` for calculating `Sputa Drishti` as outlined in the `unknown document`, I plan to include an option for users to select different calculation methods in future releases.
+
+## How to interpret the Sputa Drishti Data Table
+
+The data table window includes two tabs: `Natal to Transit Aspects` and `Transit to Natal Aspects`. The `Natal to Transit Aspects` tab displays the aspect values of natal planets aspecting transit planets, while the `Transit to Natal Aspects` tab shows the aspect values of transit planets aspecting natal planets. The maximum aspect value is `60 virupas`, with higher values indicating stronger aspects.
+
+In these tables, the rows represent the aspecting planets and the columns represent the aspected planets. Planets with physical bodies ('Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', and 'Venus') can form aspects, while bodiless points ('Rahu', 'Ketu', and 'Ascendant') cannot create aspects.
+
+<img src="https://i.imgur.com/d519CtU.png" alt="Data table window" style="width:600px;"/>
+
+In above example, `Natal Saturn` aspects transit `Sun`, `Moo`, `Mer`, `Jup`, `Rah`, and `Ket` with strong aspects.
 
 ## Credit
 
