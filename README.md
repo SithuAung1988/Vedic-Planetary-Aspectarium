@@ -22,18 +22,18 @@
 # Vedic Planetary Aspectarium
 
 ## What it is?
-'Vedic Planetary Aspectarium' is a supplimentary application written in Python for [Maitreya](https://saravali.github.io/) program, which is an Open Source platform for Vedic and western astrology.
+**Vedic Planetary Aspectarium** is a Python-based application designed to assist the Vedic/Hindu astrology community in easily calculating and assessing planetary aspects.
 
 ## What it does?
-- Enables users to easily calculate 'Sputa Drishti' in both directions (i.e., natal planets aspecting transit planets and transit planets aspecting natal planets).
-- Presents the values of drishti in a tabular format.
-- Shows two charts side by side, available in both North and South Indian styles.
+- Enables users to easily calculate `Sputa Drishti` in both directions (i.e., natal planets aspecting transit planets and transit planets aspecting natal planets).
+- Presents the values of `drishtis` in a tabular format.
+- Shows two charts side by side, available in both `North` and `South` Indian styles.
 
 ## News
 ### Release 0.0.0.1 (Oct 2024)
 - The capability to display North Indian style charts (both natal and transit) in a single window has been introduced, replacing the previous separate windows.
-- The application now utilizes the 'darkdetect' library to generate North Indian style charts, allowing it to automatically switch between light and dark themes if the user changes the operating system theme while using the app.
-- A new file, 'dataDelete.py', has been added, enabling users to easily remove all temporary and residual files after running the application.
+- The application now utilizes the `darkdetect` library to generate North Indian style charts, allowing it to automatically switch between light and dark themes if the user changes the operating system theme while using the app.
+- A new script, `dataDelete.py`, has been added, enabling users to easily remove all temporary and residual files after running the application.
 
 ## Prerequisites
 I developed and tested this application using the following software, fonts, tools, and libraries. (Oct 2024)
@@ -62,8 +62,8 @@ winget install Python.Python.3.12.7
 Using `winget` makes it easier to update and manage your Windows software.
 
 #### macOS
-> [!CAUTION]
-> On macOS, avoid using the pre-installed version of `Python`, as this application requires `Python 3`.
+> [!WARNING]
+> On macOS, avoid using the pre-installed version of `Python`.
 - Instead, follow this [guide](https://www.freecodecamp.org/news/python-version-on-mac-update/) to install `Python` using `Homebrew` and `pyenv`.
 - `Homebrew` and `pyenv` will allow you to easily manage different `Python` versions on your system.
 
@@ -72,12 +72,13 @@ Using `winget` makes it easier to update and manage your Windows software.
 > Most major GNU/Linux distros come with `Python` pre-installed. However, in many cases, you may need to use `python3` instead of `python` when running Python scripts.
 
 ### PyQt6 and darkdetect
-Once you have installed `Python 3`, you can install `PyQt6` and `darkdetect` using `pip`. Enter the following command in your `Terminal` app (on macOS and Linux) or `PowerShell` (on Windows).
+Once you have installed `Python`, you can install `PyQt6` and `darkdetect` using `pip`. Enter the following command in your `Terminal` app (on macOS and Linux) or `PowerShell` (on Windows).
 ```sh
 pip install PyQt6 darkdetect
 ```
 
 ### Git
+
 #### Windows
 Just like with Python, you can use `winget` to install `Git` on Windows. Execute the following command in `PowerShell`:
 ```sh
@@ -148,7 +149,7 @@ Ket 11°59′22″ Vir  Ari Hasta
 Asc 11°59′34″ Cap  Ari Sravana   
 ```
 
-After downloading the GitHub repository and creating your `*.txt` files, run the `dataInput.py` script using one of the following commands:
+- After downloading the GitHub repository and creating your `*.txt` files, run the `dataInput.py` script using one of the following commands:
 ```python
 python path/to/your/directory/VPA/dataInput.py
 ```
@@ -156,21 +157,21 @@ or
 ```python
 python3 path/to/your/directory/VPA/dataInput.py
 ```
-After the data input window appears, load your `*.txt` files accordingly.
+- After the data input window appears, load your `*.txt` files accordingly.
 
 <img src="https://i.imgur.com/XR5ACMj.png" alt="User inputs of Maitreya charts data." style="width:520px;"/>
 
-If everything is correct, you will see a message box like this:
+- If everything is correct, you will see a message box like this:
 
 <img src="https://i.imgur.com/2YCaZhT.png" alt="Data calculated and passed." style="width:600px;"/>
 
-If there is an issue with the data inputs, you will see a message box like this:
+- If there is an issue with the data inputs, you will see a message box like this:
 
 <img src="https://i.imgur.com/CqDXWAF.png" alt="Data calculated and failed." style="width:600px;"/>
 
-If you see the error message, check your input files and try again.
+- If you see the error message, check your input files and try again.
 
-After clicking 'Continue', you will see the following window:
+- After clicking 'Continue', you will see the following window:
 <img src="https://i.imgur.com/d519CtU.png" alt="Data table window" style="width:600px;"/>
 
 In this table, the rows represent the aspecting planets, and the columns represent the aspected planets. You can switch between the `Natal to Transit Aspects` and `Transit to Natal Aspects` tabs.
@@ -187,6 +188,7 @@ python path/to/your/directory/VPA/chartTableN.py
 <img src="https://i.imgur.com/9QquqPd.png" alt="North Indian Chart" style="width:600px;"/>
 
 or
+
 ```python
 python path/to/your/directory/VPA/chartTableS.py
 ```
@@ -197,6 +199,7 @@ Once you finish, you can run the following script to cleanup all temporary data.
 ```python
 python path/to/your/directory/VPA/dataDelete.py
 ```
+
 > [!CAUTION]
 > That script will delete all the previouly saved data. If you want to backup your calculations, then DO NOT RUN that script.
 
@@ -275,19 +278,15 @@ The fourth part of the version number reflects internal improvements of the soft
 <summary>READ MORE.</summary>
 <br />
 
-Before using `VPA`, please be aware that the current version employs what I call the `**Alternative Method**` for calculating planetary aspects. The key difference between the `Traditional Method` and the `Alternative Method` lies in how retrograde planets (including `Rahu` and `Ketu`) create aspects with other planets. 
-
-In the `Alternative Method`, the assumption is that planets can only aspect planets that are ahead of them in their path (i.e., they cannot see backward). If a planet is moving in normal motion, it can only aspect those with a higher degree. Conversely, if a planet is in retrograde motion, it can only aspect those with a lower degree.
-
-I come from a long line of Vedic astrologers. According to our oral tradition, my ancestors migrated from India to Burma in the early 18th century and served as astrologers in the Burmese royal court, advising many kings and princes. This method of calculating planetary aspects has been passed down through generations within my family. It has been tested repeatedly and found to be more reliable than the `traditional method`, which is why I am committed to preserving this tradition.
+Before using `VPA`, please be aware that the current version employs what I call the **`Alternative Method`** for calculating planetary aspects. The key difference between the `Traditional Method` and the `Alternative Method` lies in how retrograde planets (including `Rahu` and `Ketu`) create aspects with other planets. In the `Alternative Method`, the assumption is that planets can only aspect planets that are ahead of them in their path (i.e., they cannot see backward). If a planet is moving in normal motion, it can only aspect those with a higher degree. Conversely, if a planet is in retrograde motion, it can only aspect those with a lower degree.
 
 For example, consider a scenario where `Planet A` is a fast-moving planet and `Planet B` is a slow-moving planet. If A is in `Scorpio` and B is in `Taurus`, their aspect is strong as they move towards each other. Once A completes a full 60 virupas aspect to B, it moves away and stops aspecting B. Later, when A is in `Libra`, its 7th aspect point is in `Aries`. If A starts moving normally again and re-enters `Scorpio`, it makes a 7th aspect to B once more. Initially, A aspected B from the front side, and upon returning, it aspects B from the back side. From B’s perspective, A first aspected it from the front and later from the back.
 
-In the `traditional method`, even if Planet A aspects Planet B twice in similar scenarios, it always aspects B from the back side, never making a face-to-face aspect. Prominent Vedic astrologers like `Prof. K.S. Krishnamurti` (1902-1978) emphasized that aspects made by retrograde planets are stronger than those made by planets in normal motion. This is why I believe this method of calculating aspects is more logical than traditional methods.
+In the `traditional method`, even if Planet A aspects Planet B twice in similar scenarios, it always aspects B from the back side, never making a face-to-face aspect. Prominent Vedic astrologers like `Prof. K.S. Krishnamurti` emphasized that aspects made by retrograde planets are stronger than those made by planets in normal motion. This is why I believe this method of calculating aspects is more logical than traditional methods.
 
 Another example involves planets with special aspects. If `Mars` is in `Scorpio` and `Planet A` is in `Leo`, the `traditional method` suggests no aspect between them. However, using the `alternative method`, `Mars` aspects `Planet A` via its `4th` special aspect. When `Mars` returns to normal motion, its `7th` or `8th` aspects fail to aspect `Planet B`. Whether an aspect exists or not can significantly impact predictions.
 
-I believe more research is needed in this area. Classical Vedic treatises like BPHS, Brihat Jataka, Saravali, Phaladeepika, and Jataka Parijata do not mention the `alternative method`, to the best of my knowledge. _I apologize for any shortcomings in my understanding_. However, given the long history of Vedic astrology, I do not believe my ancestors invented this method. Therefore, I refer to it as the `Alternative Method` to distinguish it from the `traditional method`.
+I believe more research is needed in this area. Classical Vedic treatises like BPHS, Brihat Jataka, Saravali, Phaladeepika, and Jataka Parijata do not mention the `alternative method`, to the best of my knowledge. If the topic was mentioned in these classics, then **I apologize for any shortcomings in my understanding**.
 
 </details>
 
@@ -389,7 +388,7 @@ Therefore, in current release of `VPA`, I followed the value given by both Engli
 ### Problem with Sputa Drishti tables from English transalations of BPHS
 
 > [!NOTE]
-> In this section, I will discuss the different methods for calculating Mars' 6th rasi aspect as presented in various sources.
+> In this section, I will discuss about the issues of Sputa Drishti tables from English transalations of BPHS
 
 <details>
 <summary>READ MORE.</summary>
@@ -433,8 +432,6 @@ In the current release of `VPA`:
 
 > [!TIP]
 > While I have selected my preferred methods for calculating planetary aspects and `Sputa Drishti` in this release, I plan to add options in future releases for users to choose their preferred methods of calculation.
-
-
 
 ## How to interpret the Sputa Drishti Data Table
 
