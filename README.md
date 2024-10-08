@@ -443,6 +443,20 @@ In these tables, the rows represent the aspecting planets and the columns repres
 
 In above example, `Natal Saturn` aspects transit `Sun`, `Moo`, `Mer`, `Jup`, `Rah`, and `Ket` with strong aspects.
 
+## Tasks
+
+Here is the list of tasks that need to be done before updateing the `VPA` to version 0.0.0.2.
+
+- [ ] Add JHora Data Input and Manual Data Input
+- [ ] Add East Indian style chart
+- [ ] Add option to choose aspects calculation methods
+- [ ] Add option to choose Sputa Drishti methods
+- [ ] Revamp the North Indian style chart
+- [ ] Add Graha Drishti tables
+- [ ] Do more testing on Windows and Ubuntu
+
+
+
 ## Credit
 
 
