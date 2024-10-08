@@ -43,7 +43,7 @@ I developed and tested this application using the following software, fonts, too
 - [Python (3.12.7)](https://www.python.org/)
 - [PyQt6 (6.7.1)](https://pypi.org/project/PyQt6/)
 - [darkdetect (0.8.0)](https://github.com/albertosottile/darkdetect/releases)
-- [Git (2.46.2)](https://git-scm.com/)
+- [Git (2.47.0)](https://git-scm.com/)
 - [Roboto Mono font](https://fonts.google.com/specimen/Roboto+Mono)
 
 ### Maitreya
