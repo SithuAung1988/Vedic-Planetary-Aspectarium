@@ -437,7 +437,7 @@ In the current release of `VPA`:
 
 The data table window includes two tabs: `Natal to Transit Aspects` and `Transit to Natal Aspects`. The `Natal to Transit Aspects` tab displays the aspect values of natal planets aspecting transit planets, while the `Transit to Natal Aspects` tab shows the aspect values of transit planets aspecting natal planets. The maximum aspect value is `60 virupas`, with higher values indicating stronger aspects.
 
-In these tables, the rows represent the aspecting planets and the columns represent the aspected planets. Planets with physical bodies ('Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', and 'Venus') can form aspects, while bodiless points ('Rahu', 'Ketu', and 'Ascendant') cannot create aspects.
+In these tables, the rows represent the aspecting planets and the columns represent the aspected planets. Planets with physical bodies (`Sun`, `Moon`, `Mars`, `Mercury`, `Jupiter`, and `Venus`) can form aspects, while bodiless points (`Rahu`, `Ketu`, and `Ascendant`) cannot create aspects.
 
 <img src="https://i.imgur.com/d519CtU.png" alt="Data table window" style="width:600px;"/>
 
