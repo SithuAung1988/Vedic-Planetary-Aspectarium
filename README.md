@@ -445,7 +445,7 @@ In above example, `Natal Saturn` aspects transit `Sun`, `Moo`, `Mer`, `Jup`, `Ra
 
 ## Tasks
 
-Here is the list of tasks that need to be done before updateing the `VPA` to version 0.0.0.2.
+Here is the list of tasks that need to be done before updating the `VPA` to version 0.0.0.2.
 
 - [ ] Add JHora Data Input and Manual Data Input
 - [ ] Add East Indian style chart
