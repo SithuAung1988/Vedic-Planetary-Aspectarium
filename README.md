@@ -455,7 +455,29 @@ Here is the list of tasks that need to be done before updating the `VPA` to vers
 - [ ] Add Graha Drishti tables
 - [ ] Do more testing on Windows and Ubuntu
 
+## FAQs
 
+**Q: How can I help the project?**
+<br /><br />
+A: One of the best ways to support an open-source project like this is to use the application, integrate it into your workflow, and enjoy it. You can also provide suggestions for improvement and share feedback about your experience. Spreading the word in your community is invaluable since 'word of mouth' is the most effective form of marketing. If you write books, articles, or blog posts on Vedic astrology, include screenshots of the application and discuss your experience with it. Additionally, you can contribute by writing documentation on its features, how you customized it for tasks beyond its original scope, and your views on planetary aspects and various drishtis. Sharing your methods of evaluation these would also be beneficial. As a hobbyist, I welcome pull requests from those proficient in programming. All I ask is that you share your code back with the community, as the application is licensed under GPL v3. I appreciate the opportunity to learn from you all. Ultimately, I am doing this project to contribute to the community, not for fame or financial gain. So, enjoy it.
+
+**Q: Can I request features?**
+<br /><br />
+A: Yes, you can. You can set up an issue on GitHub and discuss it there. While I can't promise that I will implement every request, I will certainly consider them. I am continuously improving the application, so we may eventually get to your requested features.
+
+**Q: What is the future of VPA?**
+<br /><br />
+A: Jagannatha Hora and Maitreya have been very useful to me, and I am deeply grateful to their authors. However, I encountered some difficulties integrating these softwares into my workflow, as I spend most of my time analyzing Gocharaphala or Varshaphala rather than natal charts. Although both JHora and Maitreya offer ways to display two charts (either side-by-side or combined into one large chart), I found these options somewhat cumbersome and unintuitive. Most importantly, there is no way to get detailed aspect values of transit planets aspecting the natal planets, which is a major drawback for me. While softwares like 'Parashara's Light' and 'Kala' are feature-rich, they are proprietary and require license fees.
+
+<!-- Insert Screenshots Here -->
+
+Maitreya can show transit planets' aspects to natal planets and the strength of these aspects (such as 1/4, 1/2, 3/4, and full strength). However, it presents this information using charts and arrows, and you must hover your mouse and press <kbd>Ctrl</kbd> or <kbd>Shift</kbd> to see the aspects, which is quite unintuitive. It can create an aspectarium for planets within the same chart but not for planets aspecting from another chart.
+
+<!-- Insert Screenshots Here -->
+
+My initial goal for this project was to create something that facilitates my workflow. Now, we have a way to display two charts side-by-side and easily calculate aspects between planets in different charts. This small step has already made my workflow smoother.
+
+Regarding the future of the project, I plan to integrate more useful information related to Gocharaphala. This includes details such as planets' dignities, Vedhanka points, Ashtakavarga Bindus points, Shadbala, dasa lords, and more. My aim is to develop a system that displays all the necessary information at a glance when analyzing Gocharaphala. Printing this information on physical paper would be an added bonus. I understand that achieving these goals will take time, but I am committed to the process.
 
 ## Credit
 
