@@ -271,6 +271,10 @@ The fourth part of the version number reflects internal improvements of the soft
 > [!NOTE]
 > In this section, I will discuss about a couple of methods for calculating planetary aspects.
 
+<details>
+<summary>READ MORE.</summary>
+<br />
+
 Before using `VPA`, please be aware that the current version employs what I call the `**Alternative Method**` for calculating planetary aspects. The key difference between the `Traditional Method` and the `Alternative Method` lies in how retrograde planets (including `Rahu` and `Ketu`) create aspects with other planets. 
 
 In the `Alternative Method`, the assumption is that planets can only aspect planets that are ahead of them in their path (i.e., they cannot see backward). If a planet is moving in normal motion, it can only aspect those with a higher degree. Conversely, if a planet is in retrograde motion, it can only aspect those with a lower degree.
@@ -287,6 +291,8 @@ I believe more research is needed in this area. Classical Vedic treatises like B
 
 > [!NOTE]
 > In a future release, I will provide an option for users to select between the `Traditional Method` and the `Alternative Method`. For now, if you prefer to use the `Traditional Method`, you can modify the `dataCompute.py` script by yourself. There is a function called `calculateDistance` and you can make your edit there.
+
+</details>
 
 ### Types of Drishtis
 
