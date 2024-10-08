@@ -262,9 +262,9 @@ The third part of the version number signifies bug fixes and patches. For instan
 
 The fourth part of the version number reflects internal improvements of the software. For example, I have already written the code for the East Indian style chart, but it has some rough edges that need polishing. Therefore, I decided not to include it in this release. Once I complete this functionality, I will add it to the new release and update the version number accordingly.
 
-## Important Notes
+## Important notes
 
-> [!NOTE]
+> [!TIP]
 > In the upcoming sub-sections and paragraphs, I will explain the detailed technical issues surrounding the calculation of planetary aspects and 'Sputa Drishti'. These topics can be highly complex and sometimes involve subjective opinions.
 > The detailed explanations might be exhausting and confusing for some readers.
 > Therefore, if you are not interested in the technical nitty-gritty, feel free to skip ahead to the [TLDR;: Conclusion](#tldr-conclusion) section.
