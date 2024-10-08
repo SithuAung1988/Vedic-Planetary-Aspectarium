@@ -114,7 +114,7 @@ After finished installing all the prerequisites:
 git clone https://github.com/SithuAung1988/Vedic-Planetary-Aspectarium.git <directory>
 cd <directory>/VPA/
 ```
-Replace the `<directory>` part with the directory path where you want to store to `VPA's` scripts. For example: my desktop directory path is `~/Desktop/`.
+Replace the `<directory>` part with the directory path where you want to store the `VPA's` scripts. For example: my desktop directory path is `~/Desktop/`.
 
 If you need help, read this article: [`git clone`](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=webui)
   
@@ -166,20 +166,20 @@ If everything is correct, you will see a message box like this:
 
 If there is an issue with the data inputs, you will see a message box like this:
 
-<img src="https://i.imgur.com/CqDXWAF.png" alt="Data calculated and passed." style="width:600px;"/>
+<img src="https://i.imgur.com/CqDXWAF.png" alt="Data calculated and failed." style="width:600px;"/>
 
 If you see the error message, check your input files and try again.
 
 After clicking 'Continue', you will see the following window:
 <img src="https://i.imgur.com/d519CtU.png" alt="Data table window" style="width:600px;"/>
 
-In this table, the rows represent the aspecting planets, and the columns represent the aspected planets. You can switch between the 'Natal to Transit Aspects' and 'Transit to Natal Aspects' tabs.
+In this table, the rows represent the aspecting planets, and the columns represent the aspected planets. You can switch between the `Natal to Transit Aspects` and `Transit to Natal Aspects` tabs.
 
-The program can remember the last input data. Even after closing the `Aspect Table Window`, you can reopen it without restarting the program. Run the following command to display the data table again:
+The program can remember the last input data. Even after closing the `Aspect Table Window`, you can reopen it without restarting the program from the beginning. Run the following command to display the data table again:
 ```python
 python path/to/your/directory/VPA/dataTable.py
 ```
-If you want to see your natal and transit charts in sorth or south styles, run one of these following command:
+If you want to see your natal and transit charts in North or South styles, run one of these following command:
 ```python
 python path/to/your/directory/VPA/chartTableN.py
 ```
@@ -261,10 +261,15 @@ The fourth part of the version number reflects internal improvements of the soft
 
 ## Important Notes
 
+> [!NOTE]
+> In the upcoming sub-sections and paragraphs, I will explain the detailed technical issues surrounding the calculation of planetary aspects and 'Sputa Drishti'. These topics can be highly complex and sometimes involve subjective opinions.
+> The detailed explanations might be exhausting and confusing for some readers.
+> Therefore, if you are not interested in the technical nitty-gritty, feel free to skip ahead to the [TLDR;: Conclusion](#tldr-conclusion) section.
+
 ### Aspect Method
 
-> [!WARNING]
-> This section is very important. You must read it carefully before using `VPA`.
+> [!NOTE]
+> In this section, I will discuss about a couple of methods for calculating planetary aspects.
 
 Before using `VPA`, please be aware that the current version employs what I call the `**Alternative Method**` for calculating planetary aspects. The key difference between the `Traditional Method` and the `Alternative Method` lies in how retrograde planets (including `Rahu` and `Ketu`) create aspects with other planets. 
 
@@ -280,45 +285,56 @@ Another example involves planets with special aspects. If `Mars` is in `Scorpio`
 
 I believe more research is needed in this area. Classical Vedic treatises like BPHS, Brihat Jataka, Saravali, Phaladeepika, and Jataka Parijata do not mention the `alternative method`, to the best of my knowledge. _I apologize for any shortcomings in my understanding_. However, given the long history of Vedic astrology, I do not believe my ancestors invented this method. Therefore, I refer to it as the `Alternative Method` to distinguish it from the `traditional method`.
 
-> [!TIP]
+> [!NOTE]
 > In a future release, I will provide an option for users to select between the `Traditional Method` and the `Alternative Method`. For now, if you prefer to use the `Traditional Method`, you can modify the `dataCompute.py` script by yourself. There is a function called `calculateDistance` and you can make your edit there.
 
 ### Types of Drishtis
 
-> [!WARNING]
-> Again this section is also very important. You must read it carefully before using `VPA`.
+> [!NOTE]
+> In this section, I will share my perspective on the different types of Drishtis.
 
-There are three types of Drishti:
+There are three types of Drishtis:
 - `Rasi Drishti`
 - `Graha Drishti`
 - `Sputa Drishti`
 
 Let me share my understanding of these drishtis, but please remember that this is just my **personal opinion**, so take it with a grain of salt.
 
-Imagine you’re a marketing executive at a local market, and your CEO sends out a memo regarding a new product launch. This memo may cover various issues, such as coordinating production with the production team, budgeting for the launch campaign with the finance team, and, of course, discussing about the marketing campaign with you and your team. The instructions may be quite broad, and the CEO likely has many other priorities to address. To me, this represents `Rasi Drishti.`
+Imagine you’re a marketing executive at a local market, and your CEO who is managing the global operation sends out a memo regarding a new product launch. This memo may cover various issues, such as coordinating production with the production team, budgeting for the launch campaign with the finance team, and, of course, discussing about the marketing campaign with you and your team. The instructions may be quite broad, and the CEO likely has many other priorities to address. To me, this represents `Rasi Drishti.`
 
-Now, let's discuss 'Graha Drishti.' Picture receiving a memo from your regional director. This memo should be much more specific than the one from your CEO, focusing on details relevant to your local market. In my view, this aligns with `Graha Drishti.`
+Now, let's discuss 'Graha Drishti.' Picture receiving a memo from your regional director. This memo should be much more specific than the one from your CEO, focusing on details only relevant to your local market. In my view, this aligns with `Graha Drishti.`
 
 Finally, what about 'Sputa Drishti'? Again, consider receiving instructions from your department head or marketing manager. Their marketing plan will include details on how to execute the 7Ps of marketing or how each stage of the marketing funnel should engage with consumers. As your direct supervisor, you should pay close attention to their instructions. This, for me, embodies `Sputa Drishti.`
 
-At the end of the day, every marketing professional has their own unique approach. Some may lean more towards digital marketing, while others focus on promotions or emphasize omnichannel strategies. The same can be said for planets; each has its own personality (karakas) and dignities, such as friendships with aspecting planets (Naisargika Mitra or Tatkalika Mitra) and signs (Moolatrikona or Uccha). They also have specific duties and responsibilities related to their houses. We must take these factors into account when assessing the effects of Drishtis.
+At the end of the day, every marketing professional has their own unique approach. Some may lean more towards digital marketing, while others focus on promotions or emphasize omnichannel strategies. The same can be said for planets; each has its own personality (karakas) and dignities, such as friendships with aspecting planets (e.g., Naisargika Mitra or Tatkalika Mitra) and signs (e.g., Moolatrikona or Uccha). They also have specific duties and responsibilities related to their houses. We must take these factors into account when assessing the effects of Drishtis.
 
-Many Hindu astrologers, as well as Vedic astrology books and software, often overlook `Sputa Drishti.` I believe this is due to issues in the BPHS. In BPHS, the calculation for Jupiter's special Sputa Drishti is somewhat _controversial_.
+### Controvery around Jupiter's special aspects
+
+> [!NOTE]
+> In this section, I will discuss the various methods for calculating Jupiter's special aspects as found in different sources.
+
+Many Hindu astrologers, as well as Vedic astrology books and software, often overlook `Sputa Drishti.` I believe this is due to issues in the BPHS. In BPHS, the calculation for Sputa Drishti is somewhat _controversial_, especially for `Jupiter` and `Mars`.
 
 There are two English translations of BPHS available online: one by `Shri R. Santhanam` and the other by `Girish Chand Sharma`. I have read both, and they translate the relevant sections in a similar manner.
 
-> 12. SPECIAL CONSIDERATION FOR JUPITER'S ASPECTS.. Deduct the longitude of Jupiter from that of the planet aspected by him. If the resultant sum is 3 Rasis & c or 7 Rasis & c, halve the degrees etc. (ignoring Rasis) and increase it by 45. If the sum is 4 Rasis & c or 8 Rasis & c, the degrees etc. (ignoring Rasis) be subtracted from 60. This will be the aspectual value. The sum being in conformity with others than these be treated as stated earlier.<br>
-_**Chapter 26 : p.g. 256**_<br>
-_**BPHS Vol. I translated by Shri R. Santhanam**_
+> \12. SPECIAL CONSIDERATION FOR JUPITER'S ASPECTS.. 
+> Deduct the longitude of Jupiter from that of the planet aspected by him. If the resultant sum is 3 Rasis & c or 7 Rasis & c, halve the degrees etc. (ignoring Rasis) and increase it by 45.
+> If the sum is 4 Rasis & c or 8 Rasis & c, the degrees etc. (ignoring Rasis) be subtracted from 60.
+> This will be the aspectual value. The sum being in conformity with others than these be treated as stated earlier.
+> _**Chapter 26 : p.g. 256**_<br>
+> _**BPHS Vol. I translated by Shri R. Santhanam**_
 
-> 12-13. SPECIAL CONSIDERATION FOR THE ASPECTS OF JUPITER: If after deducting the Longitude of Jupiter from that of the aspected planet the remainder is 3 or 7 signs, then the half of the degrees etc. is to be added to 45; and if the remainder is 4 or 8 then degrees etc. are deducted from 60 and this will be the Sphuta Drishti or Aspectual Value of Jupiter (on the given House or planet). If the remainder is some other number of sign, then the Aspectual Value is to be known in the manner described above.
-> In the same way is stated the Aspectual Value of the Sun and the other planets. The effects of the Houses should be predicted according to this Aspect
+> 12-13. SPECIAL CONSIDERATION FOR THE ASPECTS OF JUPITER:
+> If after deducting the Longitude of Jupiter from that of the aspected planet the remainder is 3 or 7 signs, then the half of the degrees etc. is to be added to 45;
+> and if the remainder is 4 or 8 then degrees etc. are deducted from 60 and this will be the Sphuta Drishti or Aspectual Value of Jupiter (on the given House or planet).
+> If the remainder is some other number of sign, then the Aspectual Value is to be known in the manner described above.
+> In the same way is stated the Aspectual Value of the Sun and the other planets. The effects of the Houses should be predicted according to this Aspect.
 > Notes: The Sage has told us the method of knowing the Aspectual Value of Jupiter through a special process.
-> 1. Deduct the longitude of Jupiter from that of the Aspected planet. If the difference is between three or four, or 7 or 8, then the signs are ignored and degrees etc. are halved and 45 is added to it. This will be the Aspectual Value.
-> 2. If the difference is between 4 or 5 or 8 or 9 signs, then the signs are ignored and degrees are deducted from 60 to get the Aspectual Value.
-> 3. If the difference comes to be other signs than the above mentioned ones, then the Aspectual Value is found out as per Slokas 6 to 8.<br>
-_**Chapter 28 : p.g. 375**_<br>
-_**BPHS Vol. I translated by Girish Chand Sharma**_
+> \1. Deduct the longitude of Jupiter from that of the Aspected planet. If the difference is between three or four, or 7 or 8, then the signs are ignored and degrees etc. are halved and 45 is added to it. This will be the Aspectual Value.
+> \2. If the difference is between 4 or 5 or 8 or 9 signs, then the signs are ignored and degrees are deducted from 60 to get the Aspectual Value.
+> \3. If the difference comes to be other signs than the above mentioned ones, then the Aspectual Value is found out as per Slokas 6 to 8.<br>
+> _**Chapter 28 : p.g. 375**_<br>
+> _**BPHS Vol. I translated by Girish Chand Sharma**_
 
 I even went through `Dr. Suresh Chandra Mishra's` Hindi translation, even though I don't understand Hindi. I used Google Translate to help me with that. You can find the book on [archive.org](https://archive.org/details/brihat-parashar-hora-shastra-vol-2-suresh-chandra-mishra). Although it is labeled as Volume 2, it is actually Volume 1. Despite my extensive efforts, I was unable to locate the chapter discussing `Sputa Drishti.` It appears that `Dr. Suresh Chandra Mishra` did not translate that entire chapter.
 
@@ -338,21 +354,60 @@ In contrast, Maitreya's calculations suggest:
 
 In my view, [the unknown document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) I discovered online provides the clearest explanation of `Sputa Drishti,` and I prefer its interpretation over the others. However, this is just my **subjective opinion**.
 
-In the current version of `VPA,` I adopted the method of the unknown document which I referred to as the `Alternative Method.`
-
 > [!NOTE]
 > I'm not sure who authored this unknown document, so please let me know if you have any information about the author or the document's title, so I can give proper credit.
 
-A
+### The issue surrounding the Mars' 6th rasi aspect
+
+> [!NOTE]
+> In this section, I will discuss the different methods for calculating Mars' 6th rasi aspect as presented in various sources.
+
+Regarding Mars' 6th rasi aspect, there are two interpretations of the original Sloka. Both English translations interpreted the term `6th signs` as `exactly 180 degrees.` However, the authors of Maitreya and the unknown document interpreted it as the `entire full 30 degrees` of the 6th rasi.
+
+Personally, I find the latter interpretation less convincing. Since all planets can form a 6th rasi aspect, why should Mars be treated differently? To my knowledge, the concept of special aspects originates from a planet's orbit being outside Earth's orbit. Planets orbiting the Sun within Earth's orbit do not have special aspects, whereas those orbiting outside do. Given that Jupiter and Saturn do not gain a `full 1 rupa aspect` simply by entering a rasi, Mars should not be treated differently.
+
+Therefore, in current release of `VPA`, I followed the value given by both English translations of BPHS, where Mars only gets a `1 rupa aspect` at an `exact 180-degree` angular distance. The rest of the degrees between 180 and 210 are treated the same as for any other planet.
+
+### Problem with Sputa Drishti tables from English transalations of BPHS
+
+> [!NOTE]
+> In this section, I will discuss the different methods for calculating Mars' 6th rasi aspect as presented in various sources.
+
+Both English translations of BPHS include a table for easier calculation of Sputa Drishti (found on `page 258` in `Shri R. Santhanam's` translation and on `page 377` in `Girish Chand Sharma's` translation).
+
+The idea behind this table is that each planet has the same base formulas for calculating Sputa Drishti. For instance, if a planet has an angular distance of 50 degrees, the formula is `(Angular distance - 30) / 2`. If the angular distance is 80 degrees, the formula is `(Angular distance - 45)`.
+
+After calculating all the planets' angular distances, the following rules should be applied:
+
+1. If Mars is between 90 and 120 degrees or between 210 and 249 degrees, add 15 to the previous value. For example, if Mars is at 100 degrees, the general formula for `90 - 120 degrees` is `30 + (120 - angular distance) / 2`. Thus, `30 + (120 - 100) / 2` is `40 Virupas`. Adding 15 results in a final value of `55 Virupas`.
+2. If Jupiter is between 120 and 150 degrees or between 240 and 270 degrees, add 30 to the previous value.
+3. If Saturn is between 60 and 90 degrees or between 270 and 300 degrees, add 45 to the previous value.
+
+The authors of both English translations of BPHS calculated all the degrees for the base formulas and presented the values in a table, such as `100.00 = 40.00`. You need to look up your angular distance in that table and add the extra value if necessary.
+
+While this table is useful for planets without special aspects (i.e., Sun, Moon, Mercury, and Venus) and for handling normal aspect degrees of planets with special aspects (e.g., 150 - 180 degrees for all planets with special aspects), it is not helpful for dealing with the special aspects of planets with special aspects. Consequently, the three rules mentioned above do not make sense.
+
+To illustrate further, let’s revisit rule 1(i.e., Mars' rule). BPHS states that if Mars is at 100 degrees, we need to use this rule: `45 + (angular distance - 90) / 2`. So `45 + (100 - 90) / 2` equals 50 virupas. As you can see, the table provides an incorrect value. In some cases, it gives virupa values exceeding 60.
+
+In conclusion, avoid using these tables as their results are unreliable. One thing you can do is the cross-referencing with the table provided in [the unknown document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) (on `page 333`). However, be aware that this table also has issues with Mars' 6th rasi aspect.
+
+### TLDR;: Conclusion
+
+> [!IMPORTANT]
+> If you skipped the above sub-sections and paragraphs, please read this section carefully.
+
+In the current release of `VPA`:
+- I opted to use what I refer to as the `Alternative Method` for calculating planetary aspects.
+  - The primary distinction between the `Alternative Method` and the `Traditional Method` is that the `Alternative Method` assumes planets in retrograde motion make their aspects backward, while planets in direct motion make their aspects forward. In the `Traditional Method`, planets always make their aspects forward regardless of their motion.
+- For Jupiter's special aspects in the calculation of `Sputa Drishti`, I adopted the method from the above mentioned `Unknown Document` I found online.
+  - Although I don't know the author or title of this document, I found its explanation of `Sputa Drishti` to be superior to any other sources I reviewed. So, I chose its method.
+- For Mars' 6th rasi aspect in the calculation of `Sputa Drishti`, I followed the method provided in the English translations of BPHS.
+    - The method mentioned in the [Maitreya's webpage](https://saravali.github.io/astrology/drishti_sputa.html) and the [unknown document](https://www.scribd.com/doc/278613179/Graha-Drishti-pdf) assign a full 60 virupas strength to Mars' aspect regardless of its degree in the 6th rasi. I don't think that is a logical method.
+
+> [!IMPORTANT]
+> While I have selected my preferred methods for calculating planetary aspects and `Sputa Drishti` in this release, I plan to add options in future releases for users to choose their preferred methods of calculation.
 
 
-To summarize, all the documents I have reviewed agree on the calculations for all drishtis except for Jupiter's 4th and 8th special drishtis:
-- Both `English translations` are in agreement, but `Maitreya/Saravali's` calculations and the `Unknown Document's` calculations diverge for both the `4th` and `8th` rasis.
-- `Maitreya/Saravali's` calculations and the `Unknown Document's` calculations align on the `4th` rasi but disagree on the `8th`. They are in agreement regarding the other drishti calculations.
-- In this release of `VPA,` I opted to use the calculation from the Unknown Document because I believe it provide a better explanation of drishtis than the others.
-
-> [!TIP]
-> Although I prefer the `Alternative Method` for calculating `Sputa Drishti` as outlined in the `unknown document`, I plan to include an option for users to select different calculation methods in future releases.
 
 ## How to interpret the Sputa Drishti Data Table
 
