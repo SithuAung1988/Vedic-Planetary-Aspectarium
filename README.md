@@ -448,8 +448,9 @@ In above example, `Natal Saturn` aspects transit `Sun`, `Moo`, `Mer`, `Jup`, `Ra
 
 Here is the list of tasks that need to be done before updating the `VPA` to version 0.0.0.2.
 
-- [ ] Add JHora Data Input and Manual Data Input
 - [ ] Add East Indian style chart
+- [ ] Add JHora Data Input
+- [ ] Add Manual Data Input
 - [ ] Add option to choose aspects calculation methods
 - [ ] Add option to choose Sputa Drishti methods
 - [ ] Revamp the North Indian style chart
