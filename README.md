@@ -28,6 +28,7 @@
 - Enables users to easily calculate `Sputa Drishti` in both directions (i.e., natal planets aspecting transit planets and transit planets aspecting natal planets).
 - Presents the values of `drishtis` in a tabular format.
 - Shows two charts side by side, available in both `North` and `South` Indian styles.
+- Can works on every major operating systems.
 
 ## News
 ### Release 0.0.0.1 (Oct 2024)
